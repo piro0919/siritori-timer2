@@ -1,0 +1,38 @@
+@keyframes stripe {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-72px);
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper::before {
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-name: stripe;
+  animation-timing-function: linear;
+  background-image: repeating-linear-gradient(
+    135deg,
+    #e2de60,
+    #e2de60 32px,
+    #f0c751 32px,
+    #f0c751 52px
+  );
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: fixed;
+  right: -72px;
+  top: 0;
+}
+
+.inner {
+  position: relative;
+}

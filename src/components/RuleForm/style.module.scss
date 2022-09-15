@@ -1,0 +1,79 @@
+.inner {
+  width: 100%;
+}
+
+.fieldsetsWrapper {
+  display: grid;
+  margin: 24px 0 0;
+  @include mq.mq($until: tablet) {
+    gap: 36px;
+  }
+  @include mq.mq($from: tablet) {
+    gap: 48px;
+  }
+}
+
+.fieldset {
+  background: #fff;
+  border: 2px solid #808080;
+  border-radius: 4px;
+  padding: 24px;
+  position: relative;
+}
+
+.legend,
+.timeLegend {
+  background: #fff;
+  border: 2px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  left: 0;
+  margin: -24px 0 0 24px;
+  padding: 4px 24px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 200px;
+}
+
+.timeLegend {
+  display: flex;
+}
+
+.time {
+  display: block;
+  width: 64px;
+}
+
+.selectsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  justify-content: center;
+}
+
+.select {
+  appearance: auto;
+  border-bottom: 1px solid #808080;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 24px 0 0;
+}
+
+.button,
+.submitButton {
+  background: #000;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 900;
+  min-width: 120px;
+  padding: 12px 24px;
+}
+
+.submitButton {
+  background: #f00;
+}

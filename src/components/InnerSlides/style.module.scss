@@ -1,0 +1,20 @@
+.wrapper {
+  display: grid;
+  grid-template: auto 1fr auto / auto;
+  height: 100%;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.inner {
+  display: grid;
+  height: 100%;
+}
+
+.item {
+  align-content: center;
+  display: grid;
+  height: 100%;
+}

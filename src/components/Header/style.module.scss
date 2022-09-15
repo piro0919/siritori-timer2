@@ -1,0 +1,31 @@
+.header {
+  position: relative;
+  text-align: center;
+  @include mq.mq($until: tablet) {
+    padding: 24px 0;
+  }
+  @include mq.mq($from: tablet) {
+    padding: 48px 0;
+  }
+}
+
+.heading1 {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+.title {
+  font-family: "Reggae One", cursive;
+  @include mq.mq($until: tablet) {
+    font-size: 32px;
+  }
+  @include mq.mq($from: tablet) {
+    font-size: 64px;
+  }
+}
+
+.red {
+  color: #f00;
+}

@@ -36,7 +36,10 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
   return (
     <>
       <Head>
-        <meta content="initial-scale=1.0, width=device-width" name="viewport" />
+        <meta
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+          name="viewport"
+        />
         <link href="/manifest.json" rel="manifest" />
         <link href="/logo192.png" rel="apple-touch-icon" />
       </Head>

@@ -9,8 +9,8 @@
       "type": "image/x-icon"
     },
     {
-      "sizes": "192x192",
-      "src": "logo192.png",
+      "sizes": "256x256",
+      "src": "logo256.png",
       "type": "image/png"
     },
     {

@@ -1,7 +1,7 @@
 import useHowl from "hooks/useHowl";
 import { useEffect } from "react";
 import usePortal, { Args } from "react-cool-portal";
-import { useBoolean, useCountdown } from "usehooks-ts";
+import { useBoolean, useCountdown, useWindowSize } from "usehooks-ts";
 import styles from "./style.module.scss";
 
 export type CountdownPortalProps = Pick<Args, "onHide">;
@@ -25,6 +25,7 @@ function CountdownPortal({ onHide }: CountdownPortalProps): JSX.Element {
   const startHowl = useHowl({
     src: "/sounds/start.mp3",
   });
+  const { height, width } = useWindowSize();
 
   useEffect(() => {
     if (!isStartCountdown) {
@@ -61,6 +62,7 @@ function CountdownPortal({ onHide }: CountdownPortalProps): JSX.Element {
           onIsStartCountdown();
           startCountdown();
         }}
+        style={{ height, width }}
       >
         <div className={styles.text}>
           {isStartCountdown ? count : "Touch Start !"}

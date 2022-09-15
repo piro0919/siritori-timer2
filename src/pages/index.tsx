@@ -116,8 +116,7 @@ function Pages(): JSX.Element {
       .fill(undefined)
       .map((_, index) => ({
         time:
-          // (parseInt(time, 10) + parseInt(handicaps[index] || "0", 10)) * 1000,
-          (5 + parseInt(handicaps[index] || "0", 10)) * 1000,
+          (parseInt(time, 10) + parseInt(handicaps[index] || "0", 10)) * 1000,
       }));
   }, [handicaps, queryPlayer, time, url]);
 
